@@ -1,0 +1,19 @@
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: var(--navbar-height);
+}
+
+.logo {
+  color: var(--main-color-text);
+  font-family: sans-serif;
+  font-weight: 700;
+}
+
+.links {
+   a {
+     margin: 0 40px;
+     color: var(--main-color-text);
+   }
+}
