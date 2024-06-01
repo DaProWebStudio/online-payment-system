@@ -1,0 +1,92 @@
+.notFound {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 70px;
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 270px;
+    left: 572px;
+    border-radius: 5px;
+    background: #ff091e;
+    width: 16.523px;
+    height: 4.726px;
+    transform: skewY(-17deg);
+    animation: rec 1.5s linear infinite;
+    @keyframes rec {
+      0% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100%{
+        opacity: 0;
+      }
+    }
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    top: 150px;
+    right: 485px;
+    width: 42.665px;
+    height: 43.467px;
+    background: var(--main-color);
+    border-radius: 50%;
+    filter: blur(20px);
+    animation: circle 2s linear infinite;
+    @keyframes circle {
+      0% {
+        opacity: 0;
+      }
+      30% {
+        opacity: 0.7;
+      }
+      40%{
+        opacity: 0;
+      }
+      60% {
+        opacity: 0.7;
+      }
+      100%{
+        opacity: 0;
+      }
+    }
+  }
+}
+
+.title {
+  color: var(--title-color);
+  font-size: var(--font-size-sm);
+  margin-top: 20px;
+}
+
+.titleLink {
+  color: var(--main-color);
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--main-color);
+    transition: all 0.3s ease;
+  }
+  &:hover::after {
+    bottom: -5px;
+    transition: all 0.3s ease;
+  }
+}
+
+.CircleBg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
