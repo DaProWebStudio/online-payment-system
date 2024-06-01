@@ -39,3 +39,18 @@
     }
   }
 }
+
+@media (max-width: 414px) {
+  .Footer {
+    flex-direction: column-reverse;
+  }
+  .title {
+    font-size: 15px;
+  }
+  .LinksSocial {
+    margin-bottom: 10px;
+    svg{
+      font-size: 30px;
+    }
+  }
+}

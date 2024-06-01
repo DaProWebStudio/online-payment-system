@@ -2,6 +2,8 @@ import cls from './Feedback.module.scss'
 import Alex from '../../../shared/assets/user1.png'
 import Misha from '../../../shared/assets/user2.png'
 import Irina from '../../../shared/assets/user3.png'
+import {Link} from "react-router-dom";
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 const dataUserFeedback = [
     {
@@ -29,18 +31,20 @@ const Feedback = () => {
                         <div data-aos="fade-up" className={cls.Card} key={name}>
                             <img src={image} alt=""/>
                             <div>
-                                <p>{description}</p>
-                                <h4>{name}</h4>
+                                <p className={cls.Desc}>{description}</p>
+                                <h4 className={cls.Name}>{name}</h4>
                             </div>
                         </div>
                     ))
                 }
+                <Link className={cls.LinkAllFeedback} to='/'>
+                    Все отзывы
+                    <ArrowForwardIcon/>
+                </Link>
             </div>
             <svg
                 className={cls.SvgBg}
                 xmlns="http://www.w3.org/2000/svg"
-                width={1600}
-
                 fill="none"
                 preserveAspectRatio="none"
             >
@@ -48,7 +52,6 @@ const Feedback = () => {
                     <path fill="url(#b)" d="M0 1h1600v1473H0z"/>
                     <mask
                         id="c"
-                        width={1600}
                         x={0}
                         y={1}
                         maskUnits="userSpaceOnUse"

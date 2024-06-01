@@ -8,3 +8,9 @@ body {
   margin: 0 auto;
   padding: 0 133px;
 }
+
+@media (max-width: 414px) {
+  .container {
+    padding: 0 20px;
+  }
+}

@@ -79,3 +79,41 @@
   top: 0;
   z-index: -1;
 }
+
+@media (max-width: 414px) {
+  .Hero {
+    padding-top: 90px;
+    display: block;
+  }
+  .Title {
+    font-size: var(--font-size-m);
+    line-height: 50px;
+  }
+  .Description {
+    font-size: var(--font-size-s);
+    line-height: 27px;
+    max-width: 100%;
+  }
+  .WrapperImage {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .DesktopAdmin {
+    max-width: 381px;
+    height: 220px;
+    border: 2px solid #fff;
+    border-radius: 13px;
+    box-shadow:
+            0 3px 19px 0 rgba(105, 12, 255, 0.22),
+            0 6px 28px 0 rgba(105, 12, 255, 0.32)
+  }
+
+  .MobilePay {
+    width: 100px;
+    border-radius: 15px;
+    box-shadow:
+            0 3px 2px 0 rgba(0, 0, 0, 0.05),
+            0 7px 5px 0 rgba(0, 0, 0, 0.07)
+  }
+}
+

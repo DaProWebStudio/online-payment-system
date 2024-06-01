@@ -62,3 +62,40 @@
   top: 0;
   box-shadow: var(--shadow-card);
 }
+
+@media (max-width: 414px) {
+  .SetOfPayments {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column-reverse;
+
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .WrapperImage {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Graphic {
+    border-radius: 8px;
+    max-width: 357px;
+    height: 203px;
+    box-shadow: var(--shadow-card);
+    margin-bottom: 20px;
+  }
+  .ApplePay {
+    display: none;
+  }
+
+  .Calculate {
+    border-radius: 23px;
+    max-width: 370px;
+    height: 400px;
+  }
+  .Visa {
+    display: none;
+  }
+}

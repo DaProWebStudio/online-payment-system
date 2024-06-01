@@ -32,3 +32,22 @@
     border-left: 20px solid var(--main-color);
   }
 }
+
+@media (max-width: 414px) {
+  .Video {
+    height: 250px;
+    video {
+      position: absolute;
+      top: 150px;
+      border-radius: 10px;
+      width: 380px;
+    }
+  }
+  .Button {
+    width: 70px;
+    height: 70px;
+    &:before {
+      left: 65%;
+    }
+  }
+}

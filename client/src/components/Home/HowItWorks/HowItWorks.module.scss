@@ -96,3 +96,20 @@
 .Excerpt {
   text-align: center;
 }
+
+@media (max-width: 414px) {
+  .HowItWorks {
+    padding-top: 100px;
+  }
+  .CircleLabel {
+    &:before {
+      display: none;
+    }
+  }
+
+  .WrapperContent {
+    padding-top: 30px;
+    flex-direction: column;
+    gap: 50px;
+  }
+}
