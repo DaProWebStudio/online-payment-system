@@ -1,5 +1,16 @@
 
+body {
+  font-family: var(--font-family);
+}
+
 .container {
   max-width: 1600px;
   margin: 0 auto;
+  padding: 0 133px;
+}
+
+@media (max-width: 414px) {
+  .container {
+    padding: 0 20px;
+  }
 }

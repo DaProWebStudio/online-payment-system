@@ -1,6 +1,23 @@
 :root {
-  --main-color-text: #000;
+  // color
+  --text-color: #161c2d;
+  --white: #fff;
+  --title-color: #150f37;
+  --main-color: #e22675;
+  --border-color: #D5D7DD;
 
+  // shadow
+  --shadow-card:
+          inset 0 -1px 4px 0 rgba(10, 37, 64, 0.35),
+          0 19px 39px -19px rgba(0, 0, 0, 0.3),
+          0 32px 65px -13px rgba(50, 50, 93, 0.25);
+
+  // font
+  --font-family: "Open Sans", sans-serif;
+  --font-size-s: 17px;
+  --font-size-sm: 21px;
+  --font-size-m: 40px;
+  --font-size-l: 60px;
 
   // size
   --navbar-height: 80px;
