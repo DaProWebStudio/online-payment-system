@@ -1,6 +1,6 @@
 import './styles/index.scss'
 import {Home} from "../pages";
-import {Navbar} from "../widgets";
+import {Footer, Navbar} from "../widgets";
 import {Route, Routes} from "react-router-dom";
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
             <Routes>
                 <Route path='/' element={<Home/>}/>
             </Routes>
-
+            <Footer/>
         </div>
     );
 }

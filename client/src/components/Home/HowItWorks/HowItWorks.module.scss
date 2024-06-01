@@ -1,0 +1,98 @@
+.HowItWorks {
+  padding-top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Title {
+  font-weight: 700;
+  font-size: var(--font-size-m);
+  line-height: 121%;
+  letter-spacing: -0.04em;
+  text-align: center;
+  color: var(--title-color);
+  margin-bottom: 30px;
+}
+
+.Description {
+  font-weight: 400;
+  font-size: var(--font-size-sm);
+  line-height: 168%;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: var(--text-color);
+  opacity: 0.7;
+  max-width: 468px;
+}
+
+.WrapperContent {
+  padding-top: 50px;
+  display: flex;
+  gap: 100px;
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 253px;
+    &:nth-child(1) {
+      .CircleLabel {
+        --circle-color: #F64B4B;
+      }
+    }
+    &:nth-child(2) {
+      .CircleLabel {
+        --circle-color: #68D585;
+      }
+    }
+    &:nth-child(3) {
+      .CircleLabel {
+        --circle-color: #473BF0;
+        &:before {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.CircleLabel {
+  position: relative;
+  width: 73px;
+  height: 73px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 133%;
+  letter-spacing: -0.03em;
+  text-align: center;
+  color: var(--white);
+  margin-bottom: 20px;
+  background: var(--circle-color);
+  &:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    width: 400px;
+    height: 2px;
+    border-bottom: 5px dashed var(--border-color);
+    z-index: -1;
+  }
+}
+
+.SubTitle {
+  font-weight: 700;
+  font-size: var(--font-size-s);
+  line-height: 152%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--text-color);
+  margin-bottom: 10px;
+}
+
+.Excerpt {
+  text-align: center;
+}

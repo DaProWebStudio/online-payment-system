@@ -1,0 +1,53 @@
+.Feedback {
+  position: relative;
+}
+
+.WrapperContent {
+  padding-top: 450px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  font-weight: 700;
+  font-size: var(--font-size-sm);
+  line-height: 137%;
+  letter-spacing: -0.04em;
+  text-align: center;
+  color: var(--white);
+  max-width: 708px;
+  margin-bottom: 50px;
+}
+
+.Card {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  border: 1px solid var(--border-color);
+  background: var(--white);
+  border-radius: 12px;
+  width: 730px;
+  height: 199px;
+  padding: 35px;
+  margin-bottom: 30px;
+  &:nth-child(3) {
+    opacity: 0.7;
+  }
+  &:last-child {
+    opacity: 0.5;
+  }
+}
+
+.SvgBg {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  z-index: -1;
+  border-radius: 0 0 20px 20px;
+  height: 100%;
+  mask {
+    height: 100%
+  }
+}
