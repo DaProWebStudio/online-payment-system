@@ -14,6 +14,8 @@ import cls from './Navbar.module.scss';
 const ColorRedButton = styled(Button)(({ theme }) => ({
     color: theme.palette.getContrastText(pink[500]),
     backgroundColor: pink[500],
+    padding: '13px 40px',
+    borderRadius: '10px',
     '&:hover': {
         backgroundColor: pink[700],
     },

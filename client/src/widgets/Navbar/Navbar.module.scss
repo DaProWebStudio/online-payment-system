@@ -6,14 +6,22 @@
 }
 
 .logo {
+
   color: var(--main-color-text);
   font-family: sans-serif;
   font-weight: 700;
 }
 
 .links {
+  display: flex;
+  align-items: center;
+  gap: 50px;
    a {
-     margin: 0 40px;
+     font-family: var(--font-family);
+     font-weight: 700;
+     font-size: 15px;
+     line-height: 173%;
+     letter-spacing: -0.01em;
      color: var(--main-color-text);
    }
 }

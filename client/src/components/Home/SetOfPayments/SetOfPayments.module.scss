@@ -1,0 +1,101 @@
+.SetOfPayments {
+  padding-top: 200px;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  gap: 40px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Title {
+  font-weight: 700;
+  font-size: var(--font-size-m);
+  line-height: 113%;
+  letter-spacing: -0.06em;
+  color: var(--title-color);
+  margin-bottom: 30px;
+}
+
+.Description {
+  font-weight: 400;
+  font-size: var(--font-size-s);
+  line-height: 168%;
+  letter-spacing: -0.01em;
+  color: var(--text-color);
+}
+
+.WrapperImage {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  grid-column-gap: 20px;
+}
+
+.Graphic,
+.ApplePay {
+  border-radius: 8px;
+  grid-column: 2 / 3;
+  max-width: 357px;
+  height: 203px;
+  box-shadow: var(--shadow-card);
+}
+
+.ApplePay {
+  border-radius: 27px;
+}
+
+.Calculate {
+  border-radius: 33px;
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  max-width: 239px;
+  height: 467px;
+  box-shadow: var(--shadow-card);
+}
+
+
+.Visa {
+  position: absolute;
+  border-radius: 17px;
+  left: -270px;
+  top: 0;
+  box-shadow: var(--shadow-card);
+}
+
+@media (max-width: 414px) {
+  .SetOfPayments {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column-reverse;
+
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .WrapperImage {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Graphic {
+    border-radius: 8px;
+    max-width: 357px;
+    height: 203px;
+    box-shadow: var(--shadow-card);
+    margin-bottom: 20px;
+  }
+  .ApplePay {
+    display: none;
+  }
+
+  .Calculate {
+    border-radius: 23px;
+    max-width: 370px;
+    height: 400px;
+  }
+  .Visa {
+    display: none;
+  }
+}

@@ -15,11 +15,19 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
-from .yasg import urlpatterns as doc_urls
+from django.urls import path, include
+from django.conf import settings
+from django.conf.urls.static import static
+
+from .yasg import schema_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('api/v1/', include('api.v1.urls')),
+    path('api/v1/auth/', include('api.auth.urls')),
+    path('', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
 ]
 
-urlpatterns += doc_urls
+admin.site.site_header = "Payments"
+admin.site.site_title = "Payments Admin Portal"
+admin.site.index_title = "Welcome to Payments Researcher Portal"

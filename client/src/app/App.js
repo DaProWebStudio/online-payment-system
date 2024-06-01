@@ -1,6 +1,6 @@
 import './styles/index.scss'
 import {Home} from "../pages";
-import {Navbar} from "../widgets";
+import {Footer, Navbar} from "../widgets";
 import {Route, Routes} from "react-router-dom";
 import {Provider} from "react-redux";
 import store from "../store/index";
@@ -14,10 +14,9 @@ function App() {
                 <Navbar />
                 <Routes>
                     <Route path='/' element={<Home/>}/>
+                      <Route path='organization' element={<Organization />} />
                 </Routes>
-                <Routes>
-                    <Route path='organization' element={<Organization />} />
-                </Routes>
+                <Footer/>
             </div>
         </Provider>
     );
