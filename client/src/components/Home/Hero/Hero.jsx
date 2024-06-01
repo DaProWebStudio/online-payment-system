@@ -5,6 +5,8 @@ import Button from "@mui/material/Button";
 import {pink} from "@mui/material/colors";
 import DesktopAdmin from "../../../shared/assets/destopAdmin.png"
 import MobilePay from '../../../shared/assets/mobilePay.png'
+import Cone3d from '../../../shared/assets/cone3d.svg'
+import MultiGraphic3d from '../../../shared/assets/multigraphics3d.svg'
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -40,6 +42,8 @@ const Hero = () => {
                 <img data-aos="fade-left" className={cls.DesktopAdmin} src={DesktopAdmin} alt=""/>
                 <img className={cls.MobilePay} src={MobilePay} alt=""/>
             </div>
+            <img className={cls.Cone3d} src={Cone3d} alt=""/>
+            <img className={cls.MultiGraphic3d} src={MultiGraphic3d} alt=""/>
             <svg className={cls.CircleBg} width="920" height="975" viewBox="0 0 920 975" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter0_f_1_1098)">
                     <circle cx="42.5" cy="119.5" r="577.5" fill="url(#paint0_radial_1_1098)"/>

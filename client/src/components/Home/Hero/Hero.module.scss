@@ -80,6 +80,18 @@
   z-index: -1;
 }
 
+.Cone3d {
+  position: absolute;
+  bottom: -40px;
+  right: 50%;
+}
+
+.MultiGraphic3d {
+  position: absolute;
+  right: 15%;
+  top: 18%;
+}
+
 @media (max-width: 414px) {
   .Hero {
     padding-top: 90px;
@@ -106,6 +118,16 @@
     box-shadow:
             0 3px 19px 0 rgba(105, 12, 255, 0.22),
             0 6px 28px 0 rgba(105, 12, 255, 0.32)
+  }
+
+  .Cone3d {
+    width: 100px;
+    bottom: -60px;
+    right: 5%;
+  }
+
+  .MultiGraphic3d {
+    right: 10%;
   }
 
   .MobilePay {
