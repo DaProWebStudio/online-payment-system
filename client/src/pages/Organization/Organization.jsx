@@ -10,7 +10,7 @@ const Organization = () => {
 
     useEffect(() => {
         dispatch(getOrganization())
-    }, []);
+    }, [dispatch]);
 
     return (
         <div className='container'>
@@ -33,7 +33,7 @@ const Organization = () => {
                         </Typography>
                     </CardContent>
                     <CardActions>
-                        <Button size="small">Learn More</Button>
+                        <Button size="small">Подробнее</Button>
                     </CardActions>
                 </Card>
             ))}
