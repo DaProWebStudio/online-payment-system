@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# Online Payment System - Client
+### Этот проект представляет собой клиентскую часть системы онлайн-платежей, <br> построенную с использованием React.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Начало работы
+Следуйте этим инструкциям, чтобы получить копию проекта на <br> вашем локальном компьютере для разработки и тестирования.
 
-## Available Scripts
+## Предварительные требования
+Для работы с проектом вам понадобится установить <br> следующее программное обеспечение:
 
-In the project directory, you can run:
+    Node.js v20.12.2
+    npm (обычно поставляется вместе с Node.js)
 
-### `npm start`
+## Установка
+Шаги по установке и настройке окружения для разработки.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Клонируйте репозиторий:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 1. Копировать код
+    git clone git@github.com:DaProWebStudio/online-payment-system.git
+Перейдите в директорию проекта:
 
-### `npm test`
+### 2. Копировать код
+    cd online-payment-system/client
+Установите зависимости:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+### 3. Копировать код
+    npm install
+Использование
+Инструкции по запуску проекта.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Запустите клиентскую часть:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 4. Копировать код
+    npm start
+Откройте браузер и перейдите по адресу `http://localhost:3000` для взаимодействия с приложением.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Сборка приложения:
 
-### `npm run eject`
+### Копировать код
+    npm run build
+Перенос файлов сборки на сервер и настройка веб-сервера для обслуживания статических файлов из директории build.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Вклад
+### Если вы хотите внести свой вклад в проект, пожалуйста, следуйте этим рекомендациям:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Сделайте форк репозитория
+Создайте новую ветку `(git checkout -b feature/ваша-функция)` <br><br>
+Внесите изменения и закоммитьте их `(git commit -am 'Добавлена новая функция')` <br><br>
+Отправьте изменения в репозиторий `(git push origin feature/ваша-функция)` <br><br>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Лицензия
+    Этот проект лицензирован в соответствии с MIT License - подробности см. в файле LICENSE.
