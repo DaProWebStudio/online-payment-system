@@ -53,10 +53,10 @@ const Navbar = () => {
                     <img src={Logo} alt=""/>
                 </Link>
                 <div className={cls.links}>
-                    <Link to="">Главная</Link>
-                    <Link to="about">О нас</Link>
-                    <Link to="contact">Контакты</Link>
-                    {isAuthorized && <Link to="organization">Организация</Link>}
+                    <Link to="/">Главная</Link>
+                    <Link to="/about">О нас</Link>
+                    <Link to="/contact">Контакты</Link>
+                    {isAuthorized && <Link to="/organization">Организация</Link>}
                     {!isAuthorized ? (
                         <ColorRedButton
                             variant="contained"
