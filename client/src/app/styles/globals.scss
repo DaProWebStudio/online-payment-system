@@ -1,5 +1,27 @@
-
 .container {
   max-width: 1600px;
   margin: 0 auto;
+  padding: 0 133px;
+}
+
+.form {
+  max-width: 600px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 130%;
+  text-align: center;
+  color: var(--main-color-text);
+  margin-bottom: 15px;
+}
+
+.description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  text-align: center;
+  color: var(--main-color-text);
+  margin-bottom: 20px;
 }
