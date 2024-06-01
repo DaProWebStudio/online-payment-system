@@ -12,6 +12,10 @@ djangorestframework = "^3.15.1"
 environs = "^11.0.0"
 drf-yasg = "^1.21.7"
 setuptools = "^70.0.0"
+djangorestframework-simplejwt = "^5.3.1"
+celery = "^5.4.0"
+celery-singleton = "^0.3.1"
+django-cors-headers = "^4.3.1"
 
 
 [build-system]
